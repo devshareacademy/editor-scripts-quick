@@ -4,8 +4,8 @@
 /* START OF COMPILED CODE */
 
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
-import DurationConfigComp from "../animations/DurationConfigComp";
 /* START-USER-IMPORTS */	
+import DurationConfigComp from "../animations/DurationConfigComp";
 /* END-USER-IMPORTS */
 
 export default class FadeCameraActionScript extends ScriptNode {
