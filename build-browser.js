@@ -31,7 +31,6 @@ function copyFiles(srcFolder, outFolder, ...exts) {
 
 		} else if (endsWith(file, ...exts) && file !== "index.js") {
 
-			console.log(`copy ${to}`);
 			fs.copyFileSync(from, to);
 		}
 	}
