@@ -31,7 +31,7 @@ As you can see, this library depends on the `@phaserjs/editor-scripts-base` libr
 
 ## Summary
 
-The scripts are divided in groups:
+The scripts split in groups:
 
 * [Core](#core-group)
 * [Arcade](#arcade-group)
@@ -41,7 +41,9 @@ The scripts are divided in groups:
 * [Random](#random-group)
 * [Timer](#timer-group)
 
-Each group contains script nodes and user components. The script nodes can be classified in Actions, Event, and Base.
+Each group contains script nodes and user components. The script nodes can be classified in Actions and Events.
+
+An Action script performs that, an action, a call to a method, like destroying an object, or shaking the camera, or playing a sound, or iterate the children nodes and execute them. An Event is a script that under certain circumstances executes it's children nodes, which are action scripts. The common events are input-related events, like "pointer down", or "key pressed". If you need to execute an action just right away, then you can use the "on awake event" to trigger the action.
 
 ## Core Group
 
